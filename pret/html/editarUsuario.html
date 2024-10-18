@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar | Registrar Usuario</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Formulario de edicion -->
+        <h1>Editar | Registrar Usuario</h1>
+        <br>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Nombre Usuario" class="input-text">
+            <input type="text" id="password" placeholder="Contraseña" class="input-text">
+            <br>
+            <label for="userRole">Selecciona un rol:</label>
+            <select id="userRole" class="input-text">
+                <option value="cliente">Cliente</option>
+                <option value="supervicion">Supervicion</option>
+                <option value="trabajador">Trabajador</option>
+                <option value="agenteGobierno">Agente de Gobierno</option>
+            </select>
+            <button type="submit" class="login-button">Editar | Registrar Usuario</button>
+            <p>.</p>
+            <button class="login-button"onclick="window.location.href='administrador.html';">Salir</button>
+        </form>    
+    </div>
+
+    <script src="../js/edicionUsuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="/css/admin-styles.css">
+</head>
+<body>
+    <header>
+        <button class="btn-notifications" onclick="window.location.href='notificaciones.html';">Notificaciones</button>
+        <img src="/img/pret-removebg-preview.png" alt="Admin Logo" class="admin-logo">
+            <button class="btn-logout"onclick="window.location.href='../index.html';">Salir</button>
+    </header>
+
+    <main>
+        <section class="block-left">
+            <div class="scroll-container">
+                <input type="text" placeholder="Buscar..." class="search-bar">
+                <div id="project-container" class="project-container"></div>
+            </div>
+            <button class="btn-new-project">Nuevo Proyecto</button>
+            <button class="btn-delete-project">Eliminar Proyecto</button>
+        </section>
+
+        <section class="block-center">
+            <h4 style="text-align: center;">Proyecto</h4>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <div class="upload-container">
+                <p>Aquí puedes subir archivos</p>
+            </div>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <p style="color: white;">.</p>
+            <div class="center-buttons" style="border-bottom: 0;">
+                <button class="btn-upload">Subir</button>
+                <button class="btn-modify">Modificar</button>
+                <button class="btn-delete">Borrar</button>
+                <button class="btn-delete">Unir archivos</button>
+            </div>
+        </section>
+
+        <section class="block-right">
+            <h4 style="text-align: center;">Usuarios</h4>
+            <p style="color: white;">.</p>
+            <div class="scroll-container">
+                <input type="text" placeholder="Buscar usuario..." class="search-bar">
+                <div id="users-container" class="users-container"></div>
+            </div>
+            <div class="right-buttons">
+                <button class="btn-add-user">Agregar Usuario</button>
+                <button class="btn-edit-user" onclick="window.location.href='editarUsuario.html';">Editar | Registrar Usuario</button>
+                <button class="btn-delete-user">Eliminar Usuario</button>
+            </div>
+        </section>
+    </main>
+    <script src="../js/funcionalidadesAdmin.js"></script>
+</body>
+</html>

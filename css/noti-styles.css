@@ -1,0 +1,115 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-notifications {
+    background-color: #dc3545; /* Rojo fuerte */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-logo {
+    width: 75px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Cuerpo principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Contenedor de notificaciones */
+.notifications-container {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Estilo de notificación */
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.notification:hover {
+    background-color: #f1f1f1;
+}
+
+.notification-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilo de los botones dentro de las notificaciones */
+.notification-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #c82333;
+}
+
+/* Estilo de botones al hacer hover */
+.btn-notifications:hover {
+    background-color: #c82333;
+}
+
